@@ -1,0 +1,92 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress-container {
+  flex-grow: 1;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--primary-text-color);
+  @include font(14px, 500, 24px, 0.03em);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--white {
+    color: var(--primary-bg-color);
+  }
+}
+
+.footer-socials-container {
+  margin-left: 70px;
+}
+
+.footer-socials-container__text {
+  color: var(--primary-bg-color);
+  @include font(14px, 700, 16px, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.subscription {
+  margin-left: 93px;
+}
+
+.subscription__text {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+
+.subscription__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.subscription__input {
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--primary-bg-color);
+  @include font(16px, null, 20px, 0.03em);
+  border-radius: 4px;
+  padding: 15px 16px;
+  width: 358px;
+  outline: none;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription__icon {
+  margin-left: 10px;
+}

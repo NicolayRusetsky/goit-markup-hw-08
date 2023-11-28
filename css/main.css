@@ -311,6 +311,10 @@ img {
   color: var(--accent-color);
 }
 
+.menu-contacts {
+  margin-bottom: 64px;
+}
+
 .menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -333,7 +337,6 @@ img {
 
 .menu-socials {
   display: flex;
-  margin-top: 64px;
 }
 
 .menu-socials__item:not(:last-child)::after {
